@@ -59,3 +59,11 @@ footer a {
 .center {
     text-align: center;
 }
+
+li, p:not(footer p) {
+    background-color: #d7ddb5;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+}
+

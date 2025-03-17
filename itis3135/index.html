@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal homepage of Lucas Manyvongsa">
+    <title>Lucas Manyvongsa - Personal Homepage</title>
+    <link rel="stylesheet" href="styles/homepage-styles.css">
+</head>
+<body>
+    <header>
+        <h1>Lucas Manyvongsa's Plighty Penguin // ITIS-3135</h1>
+        <nav>
+            <ul>
+                <li><a onclick="showSection('Home')">Home</a></li>
+                ||
+                <li><a onclick="showSection('introduction')">Introduction</a></li>
+                ||
+                <li><a onclick="showSection('contract')">Contract</a></li>
+                ||
+                <li><a onclick="showSection('hobby')">Hobby</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+        <section id="Home" class="active">
+            <h2>Welcome to my Personal Homepage</h2>
+            <p>My name is Lucas Manyvongsa, and this is my personal homepage for ITIS-3135.</p>
+            <p>Click on the links above to learn more about me or to check out my projects.</p>
+        </section>
+
+        <!-- Introduction Section -->
+        <section id="introduction">
+            <div>
+                <h2>Personal Background</h2>
+                <p>Lived in Charlotte, North Carolina for most of my life. Have been in the computer science program since the beginning of my time at UNCC.</p>
+            </div>
+            <div>
+                <h2>Professional Background</h2>
+                <p>Have done small jobs (Food Vendor, Mover, Warehouse Work).</p>
+            </div>
+            <div>
+                <h2>Academic Background</h2>
+                <p>Have a full Associate’s Degree from CPCC, and currently I’m in my 4th year at UNCC.</p>
+            </div>
+            <div>
+                <h2>Background in the Subject</h2>
+                <p>Have not taken anything related to web development, only design. Don’t know much about HTML but hoping to learn about it.</p>
+            </div>
+            <div>
+                <h2>Primary Computer Platform</h2>
+                <p>Windows PC/Laptop</p>
+            </div>
+            <div>
+                <h2>Courses I’m In and Why</h2>
+                <ul>
+                    <li><strong>Design and Implementation of Object-Oriented Systems:</strong> Interesting topic and will help me learn the foundation of systems.</li>
+                    <li><strong>Elements of Stats II:</strong> Required for my program.</li>
+                    <li><strong>Intro to Privacy & Security:</strong> Seems quite nice to know for the future, and definitely need to improve my privacy and secure my accounts better.</li>
+                    <li><strong>Web-Based Application Design and Development:</strong> Was interested in HTML and also needed for the program.</li>
+                </ul>
+            </div>
+            <div>
+                <h2>Interesting Fact</h2>
+                <p>I own a variety of different plushes.</p>
+            </div>
+        </section>
+
+        <!-- Contract Section -->
+        <section id="contract">
+            <h2>Contract</h2>
+            <p>I, Lucas K. Manyvongsa, agree to follow the terms listed in Spring 2025 ITIS-3135 52/91, Web Based Design and Implementation with my instructor, D.I. von Briesen.</p>
+            <p>I understand that all work I do on school and personal websites will be publically available to the world. I will not put information on here that is inappropriate for schoolwork, or that I wish to keep private.</p>
+        </section>
+
+        <!-- Hobby Section -->
+        <section id="hobby">
+            <h2>Hobby</h2>
+            <p>Click <a href="hobby.html">here</a> to view the Hobby page.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p><strong>External Links</strong></p>
+        <ul>
+            <li><a href="https://webpages.charlotte.edu/lmanyvon/" target="_blank">CLT Site</a></li>
+            ||
+            <li><a href="https://github.com/Veritt" target="_blank">GitHub</a></li>
+            ||
+            <li><a href="https://veritt.github.io/" target="_blank">GitHub Pages</a></li>
+            ||
+            <li><a href="https://www.freecodecamp.org/Veritt" target="_blank">freeCodeCamp</a></li>
+            ||
+            <li><a href="https://www.codecademy.com/profiles/Veritt" target="_blank">Codecademy</a></li>
+            ||
+            <li><a href="https://www.linkedin.com/in/lucas-manyvongsa-844985295/" target="_blank">LinkedIn</a></li>
+        </ul>
+        <p>
+            <a href="https://validator.w3.org/" target="_blank">Validate this page's HTML</a>
+            ||
+            <a href="https://jigsaw.w3.org/css-validator/" target="_blank">Validate this page's CSS</a>
+        </p>
+    </footer>
+    <!--Making Sections Hidden from others-->
+    <script>
+        function showSection(sectionId) {
+            // Hide all sections
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => section.classList.remove('active'));
+
+            // Show the selected section
+            const activeSection = document.getElementById(sectionId);
+            activeSection.classList.add('active');
+        }
+    </script>
+</body>
+</html>
