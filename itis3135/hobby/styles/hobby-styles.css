@@ -42,7 +42,7 @@ figure {
 figcaption {
     font-style: italic;
     color: #777;
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 footer {
     background-color: #333;
@@ -76,4 +76,7 @@ a:hover {
 }
 h1, h2, h3, p, li {
     color: #d89595;
+}
+hr {
+    opacity: 0.5;
 }
