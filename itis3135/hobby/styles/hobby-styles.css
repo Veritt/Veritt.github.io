@@ -1,13 +1,13 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f4f4f9;
+    background-color: #232338;
     color: #333;
     margin: 0;
     padding: 0;
 }
 header {
-    background-color: #2c3d50;
-    color: white;
+    background-color: #54606d;
+    color: rgb(247, 213, 213);
     padding: 20px;
     text-align: center;
 }
@@ -18,7 +18,7 @@ nav {
     padding: 10px;
 }
 nav a {
-    color: white;
+    color: rgb(74, 196, 165);
     text-decoration: none;
     margin: 0 15px;
     font-weight: bold;
@@ -42,6 +42,7 @@ figure {
 figcaption {
     font-style: italic;
     color: #777;
+    font-size: 0.9rem;
 }
 footer {
     background-color: #333;
@@ -59,11 +60,20 @@ footer a {
 .center {
     text-align: center;
 }
-
 li, p:not(footer p) {
-    background-color: #d7ddb5;
+    background-color: #444638;
     padding: 10px;
     border: 1px solid #333;
     border-radius: 5px;
 }
-
+a {
+    color: #4a90e2;
+    text-decoration: none;
+}
+a:hover {
+    color: #1e73be;
+    text-decoration: underline;
+}
+h1, h2, h3, p, li {
+    color: #d89595;
+}
