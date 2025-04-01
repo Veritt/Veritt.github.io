@@ -53,7 +53,7 @@ section {
     display: none; /* Initially hide all sections */
 }
 
-section.active {
+.active {
     display: block; /* Show the active section */
 }
 
