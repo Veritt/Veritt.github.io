@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BYO Intro</title>
+    <link rel="stylesheet" href="styles/byo_styles.css">
+    <script src="../Scripts/survey.js" defer></script>
+</head>
+<body>
+    <!-- Header will be dynamically loaded via JavaScript -->
+    <header id="header"></header>
+
+    <h2>BYO Intro</h2>
+    <h3>Time to BYO Intro page, please fill out the form below so we can create your own page.</h3>
+
+    <form id="byoForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required><br>
+
+        <label for="mascot">Mascot:</label>
+        <input type="text" id="mascot" name="mascot" placeholder="Your Mascot" required><br>
+
+        <label for="image">Image:</label>
+        <input type="file" id="image" name="image" accept=".png, .jpg" required><br>
+
+        <label for="imageCaption">Image Caption:</label>
+        <input type="text" id="imageCaption" name="imageCaption" placeholder="Your Image Caption" required><br>
+
+        <label for="personalBackground">Personal Background:</label>
+        <textarea id="personalBackground" name="personalBackground" placeholder="Your Personal Background" required></textarea><br>
+
+        <label for="professionalBackground">Professional Background:</label>
+        <textarea id="professionalBackground" name="professionalBackground" placeholder="Your Professional Background" required></textarea><br>
+
+        <label for="academicBackground">Academic Background:</label>
+        <textarea id="academicBackground" name="academicBackground" placeholder="Your Academic Background" required></textarea><br>
+
+        <label for="webDevBackground">Background in Web Development:</label>
+        <textarea id="webDevBackground" name="webDevBackground" placeholder="Your Background in Web Development" required></textarea><br>
+
+        <label for="primaryPlatform">Primary Computer Platform:</label>
+        <input type="text" id="primaryPlatform" name="primaryPlatform" placeholder="Your Primary Platform" required><br>
+
+        <label>Courses Currently Taking:</label>
+        <div id="coursesContainer">
+            <input type="text" name="courses[]" placeholder="Course Name">
+        </div>
+        <button type="button" id="addCourse">Add Course</button><br>
+
+        <label for="funnyThing">Funny Thing?</label>
+        <input type="text" id="funnyThing" name="funnyThing" placeholder="Your Funny Thing"><br>
+
+        <label for="anythingElse">Anything Else?</label>
+        <input type="text" id="anythingElse" name="anythingElse" placeholder="Anything Else"><br>
+
+        <label>
+            <input type="checkbox" id="agree" name="agree" required>
+            I understand that what is on this page is not password protected and I will not put anything here that I don’t want publicly available.
+        </label><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+
+    <!-- Footer is loaded via JavaScript -->
+    <footer id="footer"></footer>
+</body>
+</html>
